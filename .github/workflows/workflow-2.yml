@@ -3,9 +3,9 @@ run-name: ${{ github.actor }} is learning GitHub Actions
 # Controls when the workflow will run
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "dev" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "dev" ]
 
 jobs:
   check-bats-version:
