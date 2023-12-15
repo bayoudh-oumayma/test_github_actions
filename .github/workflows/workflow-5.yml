@@ -25,5 +25,5 @@ jobs:
 
     - name: Push Docker Image
       run: |
-        docker tag node-image ${{ secrets.DOCKER_USERNAME }}/node-image:latest
-        docker push ${{ secrets.DOCKER_USERNAME }}/node-image:latest
+        docker tag node-image ${{ secrets.USERNAME }}/node-image:latest
+        docker push ${{ secrets.USERNAME }}/node-image:latest
