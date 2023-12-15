@@ -2,7 +2,8 @@ name: workflow-4
 run-name: ${{ github.actor }} is learning GitHub Actions
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
+  # Triggers the workflow on push or pull request events but only for the "main" branch 
+  #  si on a utiliser On[push] sig que push dans nimporte quelle branche 
   push:
     branches: [ "main" ]
 
@@ -10,6 +11,7 @@ jobs:
   build-docker-image:
     runs-on: ubuntu-latest
     steps:
+    #//uses pour utliser des actios pre-definit par github-action 
       - uses: actions/checkout@v4
 
       - name: Build nodejs with Docker
